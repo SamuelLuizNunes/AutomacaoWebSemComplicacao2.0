@@ -25,14 +25,14 @@ public class TestWeb {
     }
     @Test
     public void primeiroTeste(){
-        String xPathTitulo = "/html/body/div/div/div/div/div/section[2]/div[3]/div/div/div/div/div[1]/div/h4";
+        String xPathTitulo = "//section[2]//h4";
         WebElement txtTitulo =  driver.findElement(By.xpath(xPathTitulo));
         Assert.assertEquals("Porque Tempo É Conhecimento", txtTitulo.getText());
     }
 
     @Test
     public void deveClicarLink(){
-        String botao = "/html/body/div/div/div/div/div/section[2]/div[3]/div/div/div/div/div[2]/div/div/a";
+        String botao = "//section[2]//div[3]//a";
         driver.findElement(By.xpath(botao)).click();
         String txtConhecaCursos = "//*[@id=\"block-214\"]/div/div/div/div[1]/div/div";
         Assert.assertEquals("Conheça todos os nossos cursos", driver.findElement(By.xpath(txtConhecaCursos)).getText());
