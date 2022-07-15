@@ -24,6 +24,7 @@ public class TestWeb {
         pricipalPage = new PrincipalPage(driverWeb.getDriver());
         cursoPage = new CursoPage(driverWeb.getDriver());
     }
+
     @After
     public void finalizaDriver(){
         driverWeb.getDriver().quit();
