@@ -10,11 +10,13 @@ public class LoginSteps {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
     @Quando("for realizado um clique fora da modal")
     public void forRealizadoUmCliqueForaDaModal() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
     @Entao("a janela modal deve ser fechada")
     public void aJanelaModalDeveSerFechada() {
         // Write code here that turns the phrase above into concrete actions
@@ -23,9 +25,8 @@ public class LoginSteps {
 
     @Quando("for realizado um clique no icone de fechar")
     public void forRealizadoUmCliqueNoIconeDeFechar() {
-        
-        
-        
+
+
     }
 
     @Quando("for realizado um clique no link Create New Account")
@@ -38,12 +39,12 @@ public class LoginSteps {
 
     @Quando("os campos de login forem preenchidos da seguinte forma")
     public void osCamposDeLoginForemPreenchidosDaSeguinteForma() {
-        
+
     }
 
     @Quando("for realizado um clique no botao sign in")
     public void forRealizadoUmCliqueNoBotaoSignIn() {
-        
+
     }
 
     @Entao("deve ser possivel logar no sistema")
@@ -52,7 +53,7 @@ public class LoginSteps {
 
     @Entao("o sistema deve exibir uma mensagem de erro")
     public void oSistemaDeveExibirUmaMensagemDeErro() {
-        
+
     }
 
     @Entao("o botao sign in deve permanecer desabilitado")
