@@ -51,11 +51,15 @@ public class LoginPage {
     }
 
     public void visibilityOfBtnFechar(){
-        Driver.visibilityOf(loginMap.btnLogin);
+        Driver.visibilityOf(loginMap.btnFechar);
     }
 
     public void invisibilityOfBtnFechar(){
         Driver.invisibilityOf(loginMap.btnFechar);
+    }
+
+    public void aguardaLoader(){
+        Driver.atributeChange(loginMap.divLoader, "display", "none");
     }
 
 }
