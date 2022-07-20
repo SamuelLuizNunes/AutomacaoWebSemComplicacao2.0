@@ -21,7 +21,7 @@ public class LoginSteps {
 
     @After
     public void fechaNavegador(){
-        Driver.getDriver().quit();
+        //Driver.getDriver().quit();
     }
 
     @Dado("que a modal esteja sendo exibida")
@@ -37,9 +37,12 @@ public class LoginSteps {
     }
 
     @Entao("a janela modal deve ser fechada")
-    public void aJanelaModalDeveSerFechada() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void aJanelaModalDeveSerFechada() throws Exception {
+        try {
+            loginPage.invisibilityOfBtnFechar();
+        }catch (Exception e){
+            throw new Exception("A janela modal nao foi fechada");
+        }
     }
 
     @Quando("for realizado um clique no icone de fechar")
