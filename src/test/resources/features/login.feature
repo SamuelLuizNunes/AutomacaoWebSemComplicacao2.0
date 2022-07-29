@@ -29,7 +29,7 @@ Funcionalidade: Login
     Entao deve ser possivel logar no sistema
     Exemplos:
       | identificacao       | login  | password | remember |
-      | todos os campos     | samuel | Senha123 | true     |
+      | todos os campos     | erro   | Senha123 | true     |
       | campos obrigatorios | samuel | Senha123 | false    |
 
   @LoginInvalido
